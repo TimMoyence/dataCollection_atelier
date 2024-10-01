@@ -1,0 +1,11 @@
+﻿﻿id;description;url
+keolis_gtfs;GTFS Keolis;https://bdx.mecatran.com/utw/ws/gtfsfeed/static/bordeaux?apiKey=opendata-bordeaux-metropole-flux-gtfs-rt
+keolis_SIRI-Lite_lines-discovery;Expose la liste des lignes;https://bdx.mecatran.com/utw/ws/siri/2.0/bordeaux/lines-discovery.json?AccountKey=opendata-bordeaux-metropole-flux-gtfs-rt
+keolis_SIRI-Lite_general-message;Permet d'accéder aux messages d'alerte;https://bdx.mecatran.com/utw/ws/siri/2.0/bordeaux/general-message.json?AccountKey=opendata-bordeaux-metropole-flux-gtfs-rt
+keolis_gtfsrt_vehiclepositions;Positions de véhicules (informations sur les véhicules, notamment leur emplacement) au format GTFS-RT;https://bdx.mecatran.com/utw/ws/gtfsfeed/vehicles/bordeaux?apiKey=opendata-bordeaux-metropole-flux-gtfs-rt
+keolis_SIRI-Lite_stoppoints-discovery;Expose la liste des arrêts;https://bdx.mecatran.com/utw/ws/siri/2.0/bordeaux/stoppoints-discovery.json?AccountKey=opendata-bordeaux-metropole-flux-gtfs-rt
+keolis_SIRI-Lite_stop-monitoring;Permet d'obtenir des informations temps réel sur les heures d'arrivée et de départ à un point d'arrêt;https://bdx.mecatran.com/utw/ws/siri/2.0/bordeaux/stop-monitoring.json?AccountKey=opendata-bordeaux-metropole-flux-gtfs-rt&MonitoringRef=bordeaux:StopPoint:BP:5173:LOC
+keolis_SIRI-Lite_check-status;Permet de vérifier la disponibilité des Webservices SIRI-Lite;https://bdx.mecatran.com/utw/ws/siri/2.0/bordeaux/check-status.json
+keolis_gtfsrt_tripupdates;Mises à jour de trajets (retards, annulations, itinéraires modifiés) au format GTFS-RT;https://bdx.mecatran.com/utw/ws/gtfsfeed/realtime/bordeaux?apiKey=opendata-bordeaux-metropole-flux-gtfs-rt
+keolis_gtfsrt_alerts;Alertes de services (événements imprévus affectant une station, un itinéraire ou l'ensemble du réseau) au format GTFS-RT;https://bdx.mecatran.com/utw/ws/gtfsfeed/alerts/bordeaux?apiKey=opendata-bordeaux-metropole-flux-gtfs-rt
+keolis_SIRI-Lite_estimated-timetable;Expose les horaires calculées sur la ligne;https://bdx.mecatran.com/utw/ws/siri/2.0/bordeaux/estimated-timetable.json?AccountKey=opendata-bordeaux-metropole-flux-gtfs-rt&LineRef=bordeaux:Line:01:LOC&DirectionRef=0
