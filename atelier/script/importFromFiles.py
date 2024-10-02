@@ -1,6 +1,6 @@
 import duckdb
 
-with duckdb.connect("datalake.db") as con:
+with duckdb.connect('datalake.db') as con:
   con.sql("CREATE OR REPLACE TABLE Bordeaux_agenda AS SELECT * FROM read_csv_auto('./atelier/data/Bordeaux_agenda.csv',normalize_names=True)")
   con.table('Bordeaux_agenda').show()
   con.sql("CREATE OR REPLACE TABLE calendrier_scolaire AS SELECT * FROM read_csv_auto('./atelier/data/calendrier-scolaire.csv',normalize_names=True)")
