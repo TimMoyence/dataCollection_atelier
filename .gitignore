@@ -35,5 +35,7 @@ uploads/*
 !uploads/default.png
 .vscode/
 
-#counterVisit
-**/counterVisit.json
+./datalake.db
+.datalake.db
+./cours
+cours/

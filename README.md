@@ -1,15 +1,12 @@
 
-# Install duckdb on macOs: 
+# Projet Bordeaux Tourisme Scraping
 
-   1. python3 -m venv .venv
-   2. source .venv/bin/activate
-      And after that you need to see (.env) behind your files path
-   3. pip install duckdb
+## Structure du Projet
+- `scripts/` : Scripts pour le scraping et l'ingestion des données.
+- `config/` : Fichiers de configuration pour l'installation.
+- `data/` : Fichier DuckDB pour stocker les données collectées.
 
-# To desactivate the .venv
-   - deactivate
-
-
-# To launch the import in main.py 
-  -  python3 ./atelier/main.py
-
+## Configuration de l'Environnement
+1. Cloner le dépôt : `git clone <lien-du-dépôt>`
+2. Installer les dépendances nécessaires : `pip install -r requirements.txt`
+3. Exécuter les scripts d'ingestion.

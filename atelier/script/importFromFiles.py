@@ -7,16 +7,6 @@ with duckdb.connect("datalake.db") as con:
   con.table('calendrier_scolaire').show()
   con.sql("CREATE OR REPLACE TABLE Lieux_parking AS SELECT * FROM read_csv_auto('./atelier/data/Lieux_parking.csv',normalize_names=True)")
   con.table('Lieux_parking').show()
-
-
-# import duckdb
-
-# with duckdb.connect("datalake.db") as db:
-#     db.sql('''
-#         CREATE OR REPLACE TABLE calendrier AS
-#         SELECT * FROM read_csv_auto(
-#         'calendrier.csv',
-#         normalize_names=True
-#         )
-#     ''')
-#     db.table('calendrier').show()
+  # Todo : Make the import of the other files
+  # con.sql("CREATE OR REPLACE TABLE Lieux_parking AS SELECT * FROM read_csv_auto('./atelier/data/Lieux_parking.csv',normalize_names=True)")
+  # con.table('Lieux_parking').show()
