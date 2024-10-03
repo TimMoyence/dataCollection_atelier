@@ -35,6 +35,7 @@ uploads/*
 !uploads/default.png
 .vscode/
 
+datalake.db
 ./datalake.db
 .datalake.db
 ./cours
