@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: agenda_with_school_holidays
+    description: "A joined dataset that links Bordeaux agenda events with school holidays"
+    columns:
+      - name: event_title
+        description: "Title of the event"
+        tests:
+          - not_null
+          - unique
+      - name: first_start_date
+        description: "Start date of the event"
+        tests:
+          - not_null
+      - name: holiday_start_date
+        description: "Start date of the school holiday"
+      - name: holiday_end_date
+        description: "End date of the school holiday"
+      - name: event_city
+        description: "City where the event takes place"
+      - name: holiday_description
+        description: "Description of the school holiday"
+      - name: school_year
+        description: "The academic year the holiday belongs to"
