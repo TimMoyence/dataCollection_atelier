@@ -1,0 +1,14 @@
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: Bordeaux_agenda
+      - name: calendrier_scolaire
+      - name: chantier
+      - name: comptage_du_trafic_2023
+      - name: equipement_public
+      - name: Lieux_parking
+      - name: offres_de_services_TBM
+      - name: parkings_donnees_techniques_2024
+      - name: trafic_compteur
+      - name: trafic_geo_compteur
