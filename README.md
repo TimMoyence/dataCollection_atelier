@@ -7,6 +7,6 @@
 - `data/` : Fichier DuckDB pour stocker les données collectées.
 
 ## Configuration de l'Environnement
-1. Cloner le dépôt : `git clone <lien-du-dépôt>`
+1. Cloner le dépôt : `git clone git@github.com:TimMoyence/dataCollection_atelier.git`
 2. Installer les dépendances nécessaires : `pip install -r requirements.txt`
 3. Exécuter les scripts d'ingestion.
