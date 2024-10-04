@@ -23,13 +23,11 @@ for item in soup.find_all('div', class_='ListSit-item'):
           imageLink = (f'https://www.bordeaux-tourisme.com{image}')  
           data.append((title, date, imageLink))
 
-print(data)
+# print(data)
 
-# A voir pour l'envoie des données si il faut pas plutot faire un append des trois 
 
-# Connecter à DuckDB et stocker
 with duckdb.connect('datalake.db') as con:
   con.execute("CREATE TABLE IF NOT EXISTS agenda (title VARCHAR, date VARCHAR, imageLink VARCHAR)")
-  # Il faut faire un insert global Batch insert : voir pour faire un envoie en masse bulk / batch
-  con.execute("INSERT INTO agenda VALUES (?, ?, ?)", data)
+  con.executemany("INSERT INTO agenda VALUES (?, ?, ?)", data)
 
+print(f"Successfully inserted {len(data)} rows into the database.")
